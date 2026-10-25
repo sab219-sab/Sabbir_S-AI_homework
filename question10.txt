@@ -1,0 +1,24 @@
+Question Title: The Internship Project Setup
+Question Link: https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+cd box 
+cd client-app
+ls
+git init
+echo "hello" > app.js
+echo "hello" > index.html
+git add app.js index.html
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git remote -v
+git push -u origin main
+git log
+
+Approach:
+1. cd client-app and git init.
+2. echo contents on index.html and app.js
+3. git add temp.js 
+4. Committed with "Initial client files".
+5. added the remote as origin, and pushed with -u(as for the first time)
+6. git log to confirm the commit
