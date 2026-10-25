@@ -1,0 +1,18 @@
+Question Title: API-Service Directory Workflow
+
+Question Link: https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+Solution:
+cd api-service
+git init
+git add README.md
+git commit -m "Add documentation"
+git add server.js routes.js package.json
+git commit -m "Add server files"
+git status
+git log
+
+Approach:
+git add README.md and committed it with "Add documentation".
+git add server.js, routes.js and package.json and committed them with "Add server files".
+git status and git log to confirm both commits.
