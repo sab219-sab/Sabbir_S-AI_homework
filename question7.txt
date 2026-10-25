@@ -1,0 +1,12 @@
+Question Title: The Missing Project Credentials
+
+Question Link: https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+Solution:
+
+grep -r "DB_PASSWORD" .
+pwd
+cat EventApp/config/.env > EventApp/db_password.txt
+
+Approach:
+1. Already Pasted There
