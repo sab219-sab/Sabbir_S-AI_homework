@@ -1,0 +1,24 @@
+Question Title: Build Pipeline Directory Tree
+
+Question Link: https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+
+
+Solution:
+mkdir -p pipeline/stages/build
+mkdir -p pipeline/stages/test/unit/integration
+mkdir -p pipeline/env/staging
+mkdir -p pipeline/env/prod
+mkdir -p pipeline/artifacts/old
+chmod 750 pipeline/stages
+chmod 770 pipeline/artifacts
+chmod 700 pipeline/env
+touch pipeline/stages/build/app.py pipeline/stages/build/config.json pipeline/stages/build/NOTES.md
+echo "Build stage initialized." > pipeline/stages/build/NOTES.md
+touch pipeline/artifacts/old/build.log pipeline/artifacts/old/test.log pipeline/artifacts/old/deploy.log
+chmod 640 pipeline/artifacts/old/build.log pipeline/artifacts/old/test.log pipeline/artifacts/old/deploy.log
+
+Approach:
+1. Created folder as per instructions
+2. Set permissions by CHMOD
+3. Created the three empty files 
+4. Created the three log files with 640.
