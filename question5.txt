@@ -1,0 +1,18 @@
+Question Title: Execute a Python Script Directly
+
+Question Link: https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+which python3
+touch hello.py
+echo "#!/usr/bin/env python3" > hello.py
+echo 'print("Hello from Python")' >> hello.py
+chmod +x hello.py
+./hello.py
+
+Approach:
+1. Checked that Python 3 is installed with which python3.
+2. Created hello.py and wrote the shebang line.
+3. third line from goolge
+4. Gave the file execute permission with chmod +x.
+5. Ran it with ./hello.py and it printed Hello from Python.
